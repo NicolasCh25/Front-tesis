@@ -18,6 +18,7 @@ export const Register = () => {
 
   const registerUser = async (dataForm) => {
     const url = `${import.meta.env.VITE_BACKEND_URL}/registro`;
+    console.log("URL de registro:", url);
     await fetchDataBackend(url, dataForm, "POST");
   };
 
